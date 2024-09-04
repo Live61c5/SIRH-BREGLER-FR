@@ -37,12 +37,15 @@ class UserType extends AbstractType
                     'Responsable Hiérarchique' => 'ROLE_RESPONSABLE_HIERA',
                     'Référent Frais' => 'ROLE_REFERENT_FRAIS',
                     'RTT' => 'ROLE_RTT',
+                    'Collaborateur' => 'ROLE_COLLABORATEUR',
                 ],
                 'multiple' => true,
                 'expanded' => true,
                 'label' => false,
+                'data' => ['ROLE_USER'],
+                'required' => true
             ])
-          
+
             ->add('image', FileType::class, [
                 'data_class' => null,
                 'required' => false,
